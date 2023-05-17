@@ -3,5 +3,5 @@ from .views import nippoListView, nippoDetailView
 
 urlpatterns = [
     path("", nippoListView), #ポイント2
-      path("detail/", nippoDetailView)
+    path("detail/<int:number>/", nippoDetailView)
 ]
